@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+h1{
+  font-family: 'Montserrat thin', sans-serif;
+  font-size: 45px;
+  line-height: 1em;
+}
+
+h2{
+  font-family: 'Montserrat thin', sans-serif;
+  line-height: 1em;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+  display: block;
+}
+
+html,body{
+	width: 100%;
+	margin: 0px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+a{
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+p{
+	color: #4c4c46;
+	font-family: "Open Sans", sans-serif;
+  font-size:15px;
+	text-align: justify;
+}
+
+
+h3{
+	text-align: center;
+	color: #4c4c46;
+	font-weight: 500;
+  font-family: "Montserrat light";
+}
+
+h4{
+  font-family: 'Montserrat thin';
+  text-align: center;
+  color: #fff;
+  margin: unset;
+
+}
+
+
+/* =================FOOTER SECTION====================*/
+footer{
+  font-weight: normal;
+  font-size:11px;
+  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+	text-align: center;
+  margin: 15px;
+}
+
+footer a{
+  font-family: "Montserrat";
+  font-size: 11px;
+  color:#4c4c46;
+}
+
+footer a:hover{ /* select links during mouse hover (on mouse over)*/
+  color:black;
+  text-decoration: underline;
+}
+
+footer a:active { /* select links while the mouse button is depressed (clicking)*/
+  color:orange;
+}
+
+article h3{
+  font-size:25px;
+  line-height: .5em;
+}
+
+figure img{
+  width: 70%;
+  margin: 16%;
+  transition: .6s;
+}
+
+figcaption{
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  width: -webkit-fill-available;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'montserrat';
+  justify-content: space-around;
+  transition: .5s;
+  position: absolute;
+
+}
+
+
+figure:hover figcaption{
+  opacity: .85  ;
+  
+}
+
+figure:hover img{
+    width: 50%;
+    margin: 18%;
+}
+
+/*SESSÃO DE HEADER*/
+.header__interno{
+	display: inline-block;
+	width: 100%;
+  vertical-align: middle;
+}
+
+.header__logo__box{
+	
+	box-sizing: border-box;	
+}
+.header__logo{
+	vertical-align:middle;
+	text-align: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+}
+.imagem-background{
+	position: relative;
+	max-width: 100%;
+  min-width: 100%;
+	z-index:0;
+	background-size: cover;
+	background-position: center center;
+}	
+
+.social-media-icons{
+	text-align: center;
+	font-size:30px;
+}
+
+.social-media-icons a{
+	padding: 4px;
+	text-align: center;
+	font-size:30px;
+	margin: 8px;
+	color:#4c4c46;
+}
+
+#apresentacoes{
+	color: #fff;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+}
+/*Sessão de profile*/
+.profile_picture{
+    display: block;
+    position: relative;
+    width: 150px;
+    margin-top: -85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    z-index: 50
+}
+
+#prof_full_stack{
+  font-family: "Montserrat ExtraBold";
+  text-align: center;
+  font-size:18px;
+}
+
+#inf_geral{
+  display: block;
+  height: 700px;
+}
+
+#interesses_div_externa{
+  display: block;
+  background-color: #7e8485;
+  width:  100%;
+  padding: 10px;
+}
+
+#interesses_div_externa h3{
+  color:#fff;
+  font-size: 26px;
+  font-family: 'montserrat semibold';
+}
+
+#my_skills_externo{
+  width:100%;
+  height: auto;
+  padding: 10px;
+}
+#my_skills_externo h3{
+  color:#4c4c46;
+  font-size: 26px;
+  font-family: 'montserrat semibold';
+}
+
+#my_skills_externo h4{
+  color:#4c4c46;
+}
+#interesses_anterior{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  width:70%;
+  margin: 2em auto 2em auto;
+}
+
+#interesses_anterior figure{
+  max-width: 120px;  
+  min-height: 120px;
+  min-width: 120px ;
+  position: relative;
+  background-image: linear-gradient(to right, #cb9ca1 , #ffcdd2);
+  border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  h1{
+  	font-size: 2em;
+  }
+  h2{
+  	font-size: 1em;
+  }
+
+  .social-media-icons a{
+    font-size: 40px;
+    margin-right: 10px;
+    margin:5px;
+    padding:0px;
+
+  }
+}
+
+.wrapper {
+  display: flex;
+  max-width: 650px;
+  margin: 0em auto 2em auto;
+}
+
+.wrapper > * {
+  padding: 20px;
+  display: block;
+}
+
+.main {
+  display: block;
+  background: #ffcdd28f;
+  z-index: 20;
+  margin-top: -126px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (max-width: 500px) {
+  
+}
+
+
