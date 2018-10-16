@@ -1,37 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-h1{
+h1 {
   font-family: 'Montserrat thin', sans-serif;
   font-size: 45px;
   line-height: 1em;
 }
 
-h2{
+h2 {
   font-family: 'Montserrat thin', sans-serif;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
-header, nav, footer, section, article, div {
+header,
+nav, 
+footer, 
+section, 
+article,
+div {
   box-sizing: border-box;
   display: block;
 }
 
-html,body{
+html,body {
 	width: 100%;
 	margin: 0px;
   min-height: 100%;
   box-sizing: border-box;
 }
 
-a{
+a {
   font-size: 14px;
   font-family: sans-serif;
   line-height: 1.5em;
   text-decoration: none;
 }
 
-p{
+p {
 	color: #4c4c46;
 	font-family: "Open Sans", sans-serif;
   font-size:15px;
@@ -39,14 +44,14 @@ p{
 }
 
 
-h3{
+h3 {
 	text-align: center;
 	color: #4c4c46;
 	font-weight: 500;
   font-family: "Montserrat light";
 }
 
-h4{
+h4 {
   font-family: 'Montserrat thin';
   text-align: center;
   color: #fff;
@@ -56,7 +61,7 @@ h4{
 
 
 /* =================FOOTER SECTION====================*/
-footer{
+footer {
   font-weight: normal;
   font-size:11px;
   line-height: 1.5em;
@@ -65,13 +70,13 @@ footer{
   margin: 15px;
 }
 
-footer a{
+footer a {
   font-family: "Montserrat";
   font-size: 11px;
   color:#4c4c46;
 }
 
-footer a:hover{ /* select links during mouse hover (on mouse over)*/
+footer a:hover { /* select links during mouse hover (on mouse over)*/
   color:black;
   text-decoration: underline;
 }
@@ -80,18 +85,18 @@ footer a:active { /* select links while the mouse button is depressed (clicking)
   color:orange;
 }
 
-article h3{
+article h3 {
   font-size:25px;
   line-height: .5em;
 }
 
-figure img{
+figure img {
   width: 70%;
   margin: 16%;
   transition: .6s;
 }
 
-figcaption{
+figcaption {
   background-color: white;
   border-radius: 0px 0px 10px 10px;
   width: -webkit-fill-available;
@@ -110,28 +115,25 @@ figcaption{
 }
 
 
-figure:hover figcaption{
+figure:hover figcaption {
   opacity: .85  ;
   
 }
 
-figure:hover img{
-    width: 50%;
-    margin: 18%;
-}
+
 
 /*SESSÃO DE HEADER*/
-.header__interno{
+.header__interno {
 	display: inline-block;
 	width: 100%;
   vertical-align: middle;
 }
 
-.header__logo__box{
+.header__logo__box {
 	
 	box-sizing: border-box;	
 }
-.header__logo{
+.header__logo {
 	vertical-align:middle;
 	text-align: center;
 	display: block;
@@ -139,21 +141,29 @@ figure:hover img{
     margin-right: auto;
     width: 130px;
 }
-.imagem-background{
+.imagem-background {
+  background:url('../img/imagem-background.jpg');
 	position: relative;
 	max-width: 100%;
   min-width: 100%;
 	z-index:0;
 	background-size: cover;
 	background-position: center center;
+  height:600px;
+  
 }	
 
-.social-media-icons{
+#imagem-background-styling {
+  height:600px;
+  max-width: 100%;
+  min-width: 100%;
+}
+.social-media-icons {
 	text-align: center;
 	font-size:30px;
 }
 
-.social-media-icons a{
+.social-media-icons a {
 	padding: 4px;
 	text-align: center;
 	font-size:30px;
@@ -161,7 +171,7 @@ figure:hover img{
 	color:#4c4c46;
 }
 
-#apresentacoes{
+#apresentacoes {
 	color: #fff;
   text-align: center;
   position: relative;
@@ -169,8 +179,9 @@ figure:hover img{
   margin-right: auto;
   top: 20%;
 }
+
 /*Sessão de profile*/
-.profile_picture{
+.profile_picture {
     display: block;
     position: relative;
     width: 150px;
@@ -181,44 +192,133 @@ figure:hover img{
     z-index: 50
 }
 
-#prof_full_stack{
+.profile_picture img {
+  margin:2em 0em 1em 0em;
+}
+
+#skills_in_bl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin:auto;
+  padding: .6em;
+}
+.my_skills_step_ant {
+  width: 200px;
+  height: 20px;
+  background-color: #f5e3e5;
+  transition: width .6s; 
+  border-radius: 10px;
+}
+
+.my_skills_step_ant:hover {
+  width: 205px;
+  height: 25px;
+}
+
+.my_skills_title {
+  margin: 0;
+}
+
+.my_skills_step_post {
+  background-image: linear-gradient(to left, #cb9ca1 , #ffcdd2);
+  width: 72%;
+  height: 100%;
+  border-radius: 10px;
+}
+#prof_full_stack {
   font-family: "Montserrat ExtraBold";
   text-align: center;
   font-size:18px;
 }
 
-#inf_geral{
+#inf_geral {
   display: block;
-  height: 700px;
+  height: auto;
 }
 
-#interesses_div_externa{
+#interesses_div_externa {
   display: block;
   background-color: #7e8485;
   width:  100%;
   padding: 10px;
 }
 
-#interesses_div_externa h3{
+#interesses_div_externa h3 {
   color:#fff;
   font-size: 26px;
   font-family: 'montserrat semibold';
 }
 
-#my_skills_externo{
+#my_skills_externo {
   width:100%;
   height: auto;
   padding: 10px;
 }
-#my_skills_externo h3{
+#my_skills_externo h3 {
   color:#4c4c46;
   font-size: 26px;
   font-family: 'montserrat semibold';
 }
 
-#my_skills_externo h4{
+#my_skills_externo h4 {
   color:#4c4c46;
 }
+
+.my_skills {
+  margin:1em auto 1em auto;
+}
+
+.my_skills p {
+  font-size:14px;
+  transition: all .6s;
+}
+
+.my_skills:hover p {
+  font-family: 'Montserrat Medium';
+  font-size:16px;
+}
+
+#skill_css {
+  width:60%;
+}
+
+#skill_html {
+  width:70%;
+}
+
+#skill_js {
+  width: 40%
+}
+
+#skill_an {
+  width: 30%
+}
+
+#skill_vb {
+  width: 75%
+}
+
+#skill_ps {
+  width: 65%
+}
+
+#skill_ai {
+  width: 60%
+}
+
+#skill_flask {
+  width: 20%;
+}
+
+#skill_ux {
+  width: 40%;
+}
+
+#skill_gh {
+  width:60%;
+}
+
 #interesses_anterior{
   display: flex;
   justify-content: space-between;
@@ -227,15 +327,20 @@ figure:hover img{
   margin: 2em auto 2em auto;
 }
 
-#interesses_anterior figure{
+#interesses_anterior figure {
   max-width: 120px;  
   min-height: 120px;
   min-width: 120px ;
   position: relative;
   background-image: linear-gradient(to right, #cb9ca1 , #ffcdd2);
   border-radius: 10px;
+  margin: 2em auto 2em auto;
 }
 
+#interesses_post:hover img {
+  width: 50%;
+  margin: 18%;
+}
 
 
 @media screen and (max-width: 400px) {
@@ -246,7 +351,7 @@ figure:hover img{
   	font-size: 1em;
   }
 
-  .social-media-icons a{
+  .social-media-icons a {
     font-size: 40px;
     margin-right: 10px;
     margin:5px;
@@ -257,7 +362,7 @@ figure:hover img{
 
 .wrapper {
   display: flex;
-  max-width: 650px;
+  max-width: 750px;
   margin: 0em auto 2em auto;
 }
 
@@ -268,7 +373,7 @@ figure:hover img{
 
 .main {
   display: block;
-  background: #ffcdd28f;
+  background: rgba(255,205,210,0.5);
   z-index: 20;
   margin-top: -126px;
   border-radius: 10px;
