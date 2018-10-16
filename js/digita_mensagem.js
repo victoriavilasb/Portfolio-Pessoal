@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	n=0; //número a ser incrementado
 	t = "" //letra incrementada
-	v = 150; //velocidade do texto
+	v = 100; //velocidade do texto
 	var texto = "Here is where I tell {almost} everything about myself.";
 
 	function alerta(){
@@ -10,6 +10,8 @@ $(document).ready(function() {
 		if(n > texto.length){
 			n=0;
 			t="H"
+			
+			
 		}
 
 		setTimeout(function(){
