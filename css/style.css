@@ -342,33 +342,7 @@ figure:hover figcaption {
   margin: 18%;
 }
 
-.depoimentos_externa {
-  display: flex;
-  background-color: #7e8485;
-  flex-wrap: wrap;
-}
 
-.depoimento_1 {
-  display: flex;
-  padding: .5em;
-}
-.depoimento_1 > figure {
-  width:200px;
-}
-
-#dep_pic > img {
-  border-radius: 50%;
-}
-
-#dep_text {
-  width:50%;
-}
-
-#dep_text > p {
-  width:55%;
-  color:white;
-  font-family: 'Open Sans','sans-serif';
-}
 
 @media screen and (max-width: 400px) {
   h1{
