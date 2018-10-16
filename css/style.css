@@ -201,6 +201,7 @@ figure:hover figcaption {
   flex-wrap: wrap;
   width: 70%;
   margin:auto;
+  padding: .6em;
 }
 .my_skills_step_ant {
   width: 200px;
@@ -265,7 +266,7 @@ figure:hover figcaption {
 }
 
 .my_skills {
-  margin: 0.7em;
+  margin:1em auto 1em auto;
 }
 
 .my_skills p {
@@ -333,6 +334,7 @@ figure:hover figcaption {
   position: relative;
   background-image: linear-gradient(to right, #cb9ca1 , #ffcdd2);
   border-radius: 10px;
+  margin: 2em auto 2em auto;
 }
 
 #interesses_post:hover img {
