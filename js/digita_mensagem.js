@@ -19,7 +19,6 @@ $(document).ready(function() {
 		$('.texto_autocompleta').html(t);
 		n++;
 	}
-
 	setTimeout(function() {
 		alerta();
 	}, v);
