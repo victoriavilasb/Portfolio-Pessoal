@@ -196,6 +196,7 @@ figure:hover figcaption {
 
 .profile_picture img {
   margin:2em 0em 1em 0em;
+  width:150px;
 }
 
 #skills_in_bl {
